@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="./expense-logo.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web&display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="expensetracker.css">
+        <title>Expense Tracker App</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Expense Tracker App</h1>
+    </header>
+
+    <div class="parentcontainer">
+        <div class="expensedata">
+                    <!-- Add expense section -->
+    <section class="content1">
+        <h3 class="secondTitle">Add a new item: </h3>
+
+        <!-- Expense Form -->
+        <div class="form">
+            <form id="expForm">
+
+                <div class="expenses">
+                    <div class="type">
+                        <div class="formLine">
+                            <label for="type">Type:</label> <br>
+                            <select id="type">
+                                <option value="chooseOne">Choose Card/Cash</option>
+                                <option value="Card">Card</option>
+                                <option value="Cash">Cash</option>
+                            </select>
+                        </div>
+        <!-- Expense Purpose -->
+                        <div class="formLine">
+                            <label for="name">Purpose: </label> <br>
+                            <input type="text" id="name">
+                        </div>
+                    </div>
+    
+                    <div class="date">
+                        <!-- Expense Date -->
+                    <div class="formLine">
+                        <label for="date">Date: </label> <br>
+                        <input type="date" id="date">
+                    </div>
+    <!-- Expense Amount -->
+                    <div class="formLine">
+                        <label for="amount">Amount:</label> <br>
+                        <input type="text" id="amount">
+                    </div>
+    
+                    </div>
+                </div>
+
+                <div class="button">
+                    <button type="submit" class="buttonSave">Add a new expense</button>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Content section -->
+
+    <section class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Purpose</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="expenseTable">
+            </tbody>
+        </table>
+    </section>
+
+        </div>
+    </div>
+
+    <script  src="./expensetracker.js"></script>
+
+</body>
+</html>
